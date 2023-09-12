@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-weight: bold;
+  width:100%;
+}
+
+#div-titulo {
+  margin-left: 20px;
+}
+
+#titulo {
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  color: black;
+}
+
+li {
+  margin-right: 20px;
+  font-size: 19px;
+  cursor:pointer;
+}
+
+main {
+  width: 100%;
+  height: 542px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#suptitulo {
+  margin-left: 50px;
+  font-size: 16px;
+  margin-bottom: -61px;
+  color: #b2b2b2;
+}
+
+#love-txt,
+.especial {
+  font-size: 80px;
+}
+
+#love-txt,
+.especial,
+#blog-txt,
+#suptitulo,
+#subtitulo {
+  font-family: 'PP Neue Montreal', sans-serif;
+  text-align: center;
+}
+
+#blog-txt {
+  font-size: 140px;
+  margin-top: -95px;
+  margin-left: 55px;
+  font-family: 'PP Neue Montreal', sans-serif;
+}
+
+#frontend {}
+
+
+#amor {
+  color: #E21F14;
+}
+
+#subtitulo {
+  margin-top: -120px;
+  margin-left: 10%;
+  font-size: 16px;
+  color: #616161;
+}
+
+#nome {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-size: 17px;
+  color: #616161;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CCCCCC;
+  border-radius: 12px;
+  margin-top: 50px;
+}
+
+@media (max-width: 825px) {
+
+
+  li {
+    margin-right: 14px;
+    font-size: 25px;
+  }
+
+  #div-titulo {
+    margin-left: 15px;
+  }
+
+  #titulo {
+    font-size: 25px;
+  }
+
+  #love-txt,
+  .especial {
+    font-size: 50px;
+  }
+
+  #blog-txt {
+    font-size: 90px;
+    margin-top: -60px;
+    margin-left: 45px;
+  }
+
+  #subtitulo {
+    margin-top: -80px;
+    font-size: 12px;
+  }
+
+  #suptitulo {
+    margin-left: 22px;
+    font-size: 11px;
+    margin-bottom: -34px;
+  }
+
+  #nome {
+    font-family: 'PP Neue Montreal', sans-serif;
+    font-size: 12px;
+  }
+
+  #love-txt,
+  .especial,
+  #blog-txt,
+  #suptitulo {
+    text-align: center;
+  }
+
+  #div-titulo {
+    margin-left: 12px;
+  }
+
+  #titulo {
+    font-size: 18px;
+  }
+
+  li {
+    margin-right: 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 550px) {
+
+  #love-txt,
+  .especial {
+    font-size: 40px;
+  }
+
+  #blog-txt {
+    font-size: 60px;
+    margin-top: -35px;
+    margin-left: 35px;
+  }
+
+  #subtitulo {
+    margin-top: -45px;
+    font-size: 9px;
+  }
+
+  #suptitulo {
+    font-size: 8px;
+    margin-right: 6px;
+    margin-bottom: -18px;
+  }
+
+  #love-txt,
+  .especial,
+  #blog-txt,
+  #subtitulo,
+  #suptitulo {
+    text-align: center;
+  }
+
+  #nome {
+    font-family: 'PP Neue Montreal', sans-serif;
+    font-size: 9px;
+  }
+
+  @media (max-width: 420px) {
+
+    #love-txt,
+    .especial {
+      font-size: 30px;
+    }
+
+    #blog-txt {
+      font-size: 45px;
+      margin-top: -30px;
+      margin-left: 20px;
+    }
+
+    #subtitulo {
+      margin-top: -30px;
+      font-size: 9px;
+    }
+
+    #suptitulo {
+      font-size: 8px;
+      margin-right: 6px;
+      margin-bottom: -15px;
+    }
+
+    #love-txt,
+    .especial,
+    #blog-txt,
+    #subtitulo,
+    #suptitulo {
+      text-align: center;
+    }
+
+  }
+}
+@media (max-width: 280px) {
+
+  #love-txt,
+  .especial {
+    font-size: 25px;
+  }
+
+  #blog-txt {
+    font-size: 35px;
+    margin-top: -25px;
+    margin-left: 20px;
+  }
+
+  #subtitulo {
+    margin-top: -25px;
+    font-size: 9px;
+  }
+
+  #suptitulo {
+    font-size: 7px;
+    margin-right: 6px;
+    margin-bottom: -15px;
+  }
+
+  #love-txt,
+  .especial,
+  #blog-txt,
+  #subtitulo,
+  #suptitulo {
+    text-align: center;
+  }
+
+}
