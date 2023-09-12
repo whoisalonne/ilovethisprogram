@@ -28,7 +28,9 @@ function dark() {
       main.style.backgroundColor = "#040404";
       header.style.backgroundColor = "#000000";
       ul.style.color = "white";
-      tit.style.color = "white"; 
+      titulo.style.color = "white"; 
+      claro.textContent = "Dark";
+
     } else { 
       loveTxt.style.color = "black";
       blogTxt.style.color = "black";
@@ -39,8 +41,8 @@ function dark() {
       main.style.backgroundColor = "white";
       header.style.backgroundColor = "white";
       ul.style.color = "black";
-      tit.style.color = "black"; 
-      claro.textContent = "Dark"
+      titulo.style.color = "black"; 
+      claro.textContent = "Light";
     }
   }
   
