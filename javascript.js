@@ -5,14 +5,15 @@ criador.addEventListener('mouseover', mudar);
 function mudar() { criador.textContent = "Alonne" };
 
 var titulo = document.getElementById('titulo');
-var claro = document.getElementById('light/dark');
+var claro = document.getElementById('dark');
 var loveTxt = document.getElementById('love-txt');
 var blogTxt = document.getElementById('blog-txt');
 var sup = document.getElementById('suptitulo');
 var sub = document.getElementById('subtitulo');
 var amor = document.getElementById('amor');
-var main = document.getElementById('container');
+var main = document.getElementById('frontend');
 var nome = document.getElementById('nome');
+var corpo = document.body;
 
 claro.addEventListener('click', dark);
 
@@ -29,7 +30,8 @@ function dark() {
       header.style.backgroundColor = "#000000";
       ul.style.color = "white";
       titulo.style.color = "white"; 
-      claro.textContent = "Dark";
+      claro.textContent = "Light";
+      corpo.style.backgroundColor = "black";
 
     } else { 
       loveTxt.style.color = "black";
@@ -42,7 +44,8 @@ function dark() {
       header.style.backgroundColor = "white";
       ul.style.color = "black";
       titulo.style.color = "black"; 
-      claro.textContent = "Light";
+      claro.textContent = "Dark";
+      corpo.style.backgroundColor = "";
     }
   }
   

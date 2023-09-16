@@ -9,7 +9,7 @@ header {
   align-items: center;
   font-family: 'PP Neue Montreal', sans-serif;
   font-weight: bold;
-  width:100%;
+  width: 100%;
 }
 
 #div-titulo {
@@ -17,7 +17,7 @@ header {
 }
 
 #titulo {
-  font-size: 30px;
+  font-size: 33px;
   color: black;
   cursor: pointer;
 }
@@ -32,7 +32,7 @@ ul {
 li {
   margin-right: 20px;
   font-size: 19px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 main {
@@ -47,7 +47,7 @@ main {
 #suptitulo {
   margin-left: 50px;
   font-size: 16px;
-  margin-bottom: -61px;
+  margin-bottom: -70px;
   color: #b2b2b2;
 }
 
@@ -66,13 +66,11 @@ main {
 }
 
 #blog-txt {
-  font-size: 140px;
-  margin-top: -95px;
+  font-size: 130px;
+  margin-top: -100px;
   margin-left: 55px;
   font-family: 'PP Neue Montreal', sans-serif;
 }
-
-#frontend {}
 
 
 #amor {
@@ -107,8 +105,8 @@ main {
 
 
   li {
-    margin-right: 14px;
-    font-size: 25px;
+    margin-right: 18px;
+    font-size: 17px;
   }
 
   #div-titulo {
@@ -116,17 +114,17 @@ main {
   }
 
   #titulo {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   #love-txt,
   .especial {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   #blog-txt {
-    font-size: 90px;
-    margin-top: -60px;
+    font-size: 95px;
+    margin-top: -72px;
     margin-left: 45px;
   }
 
@@ -138,7 +136,7 @@ main {
   #suptitulo {
     margin-left: 22px;
     font-size: 11px;
-    margin-bottom: -34px;
+    margin-bottom: -50px;
   }
 
   #nome {
@@ -157,38 +155,30 @@ main {
     margin-left: 12px;
   }
 
-  #titulo {
-    font-size: 18px;
-  }
-
-  li {
-    margin-right: 10px;
-    font-size: 13px;
-  }
 }
 
 @media (max-width: 550px) {
 
   #love-txt,
   .especial {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   #blog-txt {
-    font-size: 60px;
-    margin-top: -35px;
+    font-size: 70px;
+    margin-top: -58px;
     margin-left: 35px;
   }
 
   #subtitulo {
-    margin-top: -45px;
-    font-size: 9px;
+    margin-top: -55px;
+    font-size: 10px;
   }
 
   #suptitulo {
-    font-size: 8px;
+    font-size: 10px;
     margin-right: 6px;
-    margin-bottom: -18px;
+    margin-bottom: -40px;
   }
 
   #love-txt,
@@ -205,27 +195,35 @@ main {
   }
 
   @media (max-width: 420px) {
+    li {
+      font-size: 15px;
+      margin-right: 14px;
+    }
+
+    #titulo {
+      font-size: 26px
+    }
 
     #love-txt,
     .especial {
-      font-size: 30px;
+      font-size: 37px;
     }
 
     #blog-txt {
-      font-size: 45px;
-      margin-top: -30px;
+      font-size: 50px;
+      margin-top: -40px;
       margin-left: 20px;
     }
 
     #subtitulo {
       margin-top: -30px;
-      font-size: 9px;
+      font-size: 10px;
     }
 
     #suptitulo {
-      font-size: 8px;
+      font-size: 10px;
       margin-right: 6px;
-      margin-bottom: -15px;
+      margin-bottom: -25px;
     }
 
     #love-txt,
@@ -238,7 +236,17 @@ main {
 
   }
 }
-@media (max-width: 280px) {
+
+@media (max-width: 300px) {
+
+  li {
+    font-size: 12px;
+    margin-right: 8px;
+  }
+
+  #titulo {
+    font-size: 18px;
+  }
 
   #love-txt,
   .especial {
