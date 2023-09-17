@@ -29,10 +29,22 @@ ul {
   color: black;
 }
 
+/* Aqui estou dizendo que todo item que
+estiver dentro do elemento pai (ul) que
+não estiver sobre o hover, deve ficar com a cor cinza*/
+
+ul:hover :not(:hover) {
+  color: gray;
+}
+
 li {
   margin-right: 20px;
   font-size: 19px;
   cursor: pointer;
+}
+
+li:hover {
+  transform: scale(1.15);
 }
 
 main {
@@ -42,6 +54,13 @@ main {
   justify-content: center;
   align-items: center;
   background-color: white;
+}
+
+main,
+header,
+li,
+body {
+  transition: 0.5s ease;
 }
 
 #suptitulo {
