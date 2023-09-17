@@ -84,7 +84,8 @@ body {
 .especial,
 #blog-txt,
 #suptitulo,
-#subtitulo {
+#subtitulo,
+#nome {
   font-family: montreal, sans-serif;
   text-align: center;
 }
@@ -108,7 +109,6 @@ body {
 }
 
 #nome {
-  font-family: 'PP Neue Montreal', sans-serif;
   font-size: 17px;
   color: #616161;
 }
