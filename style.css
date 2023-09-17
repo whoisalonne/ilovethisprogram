@@ -227,24 +227,28 @@ body {
 
     #love-txt,
     .especial {
-      font-size: 37px;
+      font-size: 43px;
     }
 
     #blog-txt {
-      font-size: 50px;
-      margin-top: -40px;
+      font-size: 58px;
+      margin-top: -50px;
       margin-left: 20px;
     }
 
     #subtitulo {
       margin-top: -34px;
-      font-size: 10px;
+      font-size: 11px;
     }
 
     #suptitulo {
-      font-size: 10px;
+      font-size: 11px;
       margin-right: 6px;
-      margin-bottom: -27px;
+      margin-bottom: -32px;
+    }
+
+    #nome {
+      font-size: 12px;
     }
 
     #love-txt,
