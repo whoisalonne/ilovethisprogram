@@ -163,7 +163,6 @@ body {
   }
 
   #nome {
-    font-family: 'PP Neue Montreal', sans-serif;
     font-size: 12px;
   }
 
@@ -213,8 +212,7 @@ body {
   }
 
   #nome {
-    font-family: 'PP Neue Montreal', sans-serif;
-    font-size: 9px;
+    font-size: 11px;
   }
 
   @media (max-width: 420px) {
