@@ -14,6 +14,7 @@ var amor = document.getElementById('amor');
 var main = document.getElementById('frontend');
 var nome = document.getElementById('nome');
 var corpo = document.body;
+var cabeca = document.getElementById('cabeca');
 
 claro.addEventListener('click', dark);
 
@@ -27,7 +28,7 @@ function dark() {
       nome.style.color = "#b2b2b2";
       sub.style.color = "#616161";
       main.style.backgroundColor = "#040404";
-      header.style.backgroundColor = "#000000";
+      cabeca.style.backgroundColor = "#000000";
       ul.style.color = "white";
       titulo.style.color = "white"; 
       claro.textContent = "Light";
@@ -41,7 +42,7 @@ function dark() {
       nome.style.color = "#616161";
       sub.style.color = "#616161";
       main.style.backgroundColor = "white";
-      header.style.backgroundColor = "white";
+      cabeca.style.backgroundColor = "white";
       ul.style.color = "black";
       titulo.style.color = "black"; 
       claro.textContent = "Dark";
