@@ -22,9 +22,11 @@ header {
 }
 
 #titulo {
-  font-size: 33px;
+  font-size: 30px;
   color: black;
   cursor: pointer;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
 }
 
 ul {
