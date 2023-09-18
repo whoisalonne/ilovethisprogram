@@ -224,7 +224,7 @@ body {
     }
 
     #titulo {
-      font-size: 26px
+      font-size: 2px
     }
 
     #love-txt,
@@ -295,6 +295,10 @@ body {
     font-size: 7px;
     margin-right: 6px;
     margin-bottom: -15px;
+  }
+
+  #nome {
+    font-size: 8px;
   }
 
   #love-txt,
