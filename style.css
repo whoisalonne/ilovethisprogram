@@ -194,6 +194,10 @@ body {
     margin-left: 35px;
   }
 
+  #titulo {
+    font-size: 26px;
+  }
+
   #subtitulo {
     margin-top: -55px;
     font-size: 10px;
