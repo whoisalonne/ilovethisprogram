@@ -35,7 +35,6 @@ ul {
   list-style-type: none;
   align-items: center;
   color: black;
-  margin-top: -px;
 }
 
 /* Aqui estou dizendo que todo item que
@@ -227,7 +226,7 @@ body {
 
     #titulo {margin-top: 28px;}
 
-    ul{margin-top: 15px;}
+    ul{margin-top: 10px;}
 
     li {
       font-size: 15px;
