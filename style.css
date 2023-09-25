@@ -19,6 +19,7 @@ header {
 
 #div-titulo {
   margin-left: 20px;
+  margin-top: -10px;
 }
 
 #titulo {
@@ -34,6 +35,7 @@ ul {
   list-style-type: none;
   align-items: center;
   color: black;
+  margin-top: -8px;
 }
 
 /* Aqui estou dizendo que todo item que
@@ -221,7 +223,7 @@ body {
     font-size: 11px;
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: 440px) {
     li {
       font-size: 15px;
       margin-right: 14px;

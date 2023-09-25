@@ -11,10 +11,11 @@ let blogTxt = document.getElementById('blog-txt');
 let sup = document.getElementById('suptitulo');
 let sub = document.getElementById('subtitulo');
 let amor = document.getElementById('amor');
-let main = document.getElementById('frontend');
+let main = document.getElementById('conteiner');
 let nome = document.getElementById('nome');
 let corpo = document.body;
 let cabeca = document.getElementById('cabeca');
+let ul = document.getElementById('lista-cabeca');
 
 let colorWhite = [loveTxt, blogTxt, titulo, ul];
 let bgBlack = [main, cabeca, corpo];
@@ -25,7 +26,7 @@ function dark() {
   if (main.style.backgroundColor == "white") {
 
     // Percorre os arrays e aplica estilos
-    for (var i = 0; i < colorWhite.length; i++) {
+    for (var i = 0; i <= colorWhite.length - 1; i++) {
       colorWhite[i].style.color = 'white';
       bgBlack[i].style.backgroundColor = 'black';
 
@@ -39,7 +40,7 @@ function dark() {
   } else {
 
     // Percorre os arrays e aplica estilos
-    for (var i = 0; i < colorWhite.length; i++) {
+    for (var i = 0; i <= colorWhite.length - 1; i++) {
       colorWhite[i].style.color = 'black';
       bgBlack[i].style.backgroundColor = 'white';
 
