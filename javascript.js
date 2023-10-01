@@ -16,12 +16,13 @@ let paragrafos = document.querySelectorAll('p');
 let bgYborder = document.getElementById('bgYellowPlus');
 let bgYellow = document.querySelectorAll('.bgYellow');
 let imgContent = document.getElementById('img');
+let sobre = document.getElementById('sobre');
 
 
 let pArray = Array.from(paragrafos);
 let bgYArray = Array.from(bgYellow);
 
-let colorWhite = [loveTxt, blogTxt, titulo, ul, link];
+let colorWhite = [loveTxt, blogTxt, titulo, ul, link, sobre];
 let bgBlack = [main, cabeca, corpo];
 
 claro.addEventListener('click', dark);

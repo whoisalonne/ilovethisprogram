@@ -198,6 +198,7 @@ body {
 }
 
 hr {}
+
 #love-txt,
 .especial {
   font-size: 80px;
@@ -248,172 +249,73 @@ hr {}
   margin-top: 50px;
 }
 
-@media (max-width: 825px) {
-
-
-  li {
-    margin-right: 18px;
-    font-size: 17px;
+@media (max-width: 915px) {
+  #eu-png {
+    width: 290px;
+    height: 280px;
   }
 
-  #div-titulo {
-    margin-left: 15px;
+  #img {
+    width: 290px;
   }
 
-  #titulo {
-    font-size: 30px;
+  #paragrafo {
+    margin-left: 20px;
   }
 
-  #love-txt,
-  .especial {
-    font-size: 60px;
-  }
+  @media (max-width: 825px) {
 
-  #blog-txt {
-    font-size: 95px;
-    margin-top: -72px;
-    margin-left: 45px;
-  }
-
-  #subtitulo {
-    margin-top: -80px;
-    font-size: 12px;
-  }
-
-  #suptitulo {
-    margin-left: 22px;
-    font-size: 11px;
-    margin-bottom: -50px;
-  }
-
-  #nome {
-    font-size: 12px;
-  }
-
-  #div-titulo {
-    margin-left: 12px;
-  }
-
-}
-
-@media (max-width: 550px) {
-
-  #love-txt,
-  .especial {
-    font-size: 50px;
-  }
-
-  #blog-txt {
-    font-size: 70px;
-    margin-top: -58px;
-    margin-left: 35px;
-  }
-
-  #titulo {
-    font-size: 26px;
-  }
-
-  #subtitulo {
-    margin-top: -55px;
-    font-size: 10px;
-  }
-
-  #suptitulo {
-    font-size: 10px;
-    margin-right: 6px;
-    margin-bottom: -40px;
-  }
-
-  #nome {
-    font-size: 11px;
-  }
-
-  ul {
-    margin-top: 25px;
-  }
-
-  @media (max-width: 440px) {
-
-    #titulo {
-      margin-top: 24px;
-    }
-
-    ul {
-      margin-top: 28px;
-    }
 
     li {
-      font-size: 15px;
-      margin-right: 14px;
+      margin-right: 18px;
+      font-size: 17px;
+    }
+
+    #div-titulo {
+      margin-left: 15px;
     }
 
     #titulo {
-      font-size: 24px
+      font-size: 30px;
     }
 
     #love-txt,
     .especial {
-      font-size: 43px;
+      font-size: 60px;
     }
 
     #blog-txt {
-      font-size: 58px;
-      margin-top: -50px;
-      margin-left: 20px;
+      font-size: 95px;
+      margin-top: -72px;
+      margin-left: 45px;
     }
 
     #subtitulo {
-      margin-top: -35px;
-      font-size: 11px;
+      margin-top: -80px;
+      font-size: 12px;
     }
 
     #suptitulo {
+      margin-left: 22px;
       font-size: 11px;
-      margin-right: 6px;
-      margin-bottom: -34px;
+      margin-bottom: -50px;
     }
 
     #nome {
       font-size: 12px;
     }
 
-    #info {
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
-    #sobre {
-      font-size: 23px;
-      margin-left: 15px;
-    }
-
-    #borda-xp {
-      border-left: 2px solid;
-      padding-left: 5px;
-    }
-
-    #bgYellowPlus {
-      font-size: 21px;
-      padding-right: 4px;
+    #div-titulo {
+      margin-left: 12px;
     }
 
     #img {
-      width: 280px;
+      width: 300px;
       margin-bottom: 5px;
     }
 
-    #txt {
-      width: 100%;
-      margin-top: 20px;
-      margin-bottom: 60px;
-    }
-
-    #txt-nome {
-      font-size: 25px;
-    }
-
     #eu-png {
-      width: 280px;
+      width: 300px;
       height: 280px;
     }
 
@@ -422,69 +324,206 @@ hr {}
     }
 
   }
-}
 
-@media (max-width: 300px) {
+  @media (max-width: 550px) {
 
-  #titulo {
-    margin-top: 23px;
+    #love-txt,
+    .especial {
+      font-size: 50px;
+    }
+
+    #blog-txt {
+      font-size: 70px;
+      margin-top: -58px;
+      margin-left: 35px;
+    }
+
+    #titulo {
+      font-size: 26px;
+    }
+
+    #subtitulo {
+      margin-top: -55px;
+      font-size: 10px;
+    }
+
+    #suptitulo {
+      font-size: 10px;
+      margin-right: 6px;
+      margin-bottom: -40px;
+    }
+
+    #nome {
+      font-size: 11px;
+    }
+
+    ul {
+      margin-top: 25px;
+    }
+
+    #sobre {
+      font-size: 24px;
+      margin-left: 15px;
+    }
+
+    #txt-nome {
+      font-size: 23px;
+    }
+
+    @media (max-width: 440px) {
+
+      #titulo {
+        margin-top: 24px;
+      }
+
+      ul {
+        margin-top: 28px;
+      }
+
+      li {
+        font-size: 15px;
+        margin-right: 14px;
+      }
+
+      #titulo {
+        font-size: 24px
+      }
+
+      #love-txt,
+      .especial {
+        font-size: 43px;
+      }
+
+      #blog-txt {
+        font-size: 58px;
+        margin-top: -50px;
+        margin-left: 20px;
+      }
+
+      #subtitulo {
+        margin-top: -35px;
+        font-size: 11px;
+      }
+
+      #suptitulo {
+        font-size: 11px;
+        margin-right: 6px;
+        margin-bottom: -34px;
+      }
+
+      #nome {
+        font-size: 12px;
+      }
+
+      #info {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      #sobre {
+        font-size: 23px;
+        margin-left: 15px;
+      }
+
+      #borda-xp {
+        border-left: 2px solid;
+        padding-left: 5px;
+      }
+
+      #bgYellowPlus {
+        font-size: 21px;
+        padding-right: 4px;
+      }
+
+      #img {
+        width: 280px;
+        margin-bottom: 5px;
+      }
+
+      #txt {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 60px;
+      }
+
+      #txt-nome {
+        font-size: 25px;
+      }
+
+      #eu-png {
+        width: 280px;
+        height: 280px;
+      }
+
+      #bgYellowPlus {
+        font-size: 22px;
+      }
+
+    }
   }
 
-  li {
-    font-size: 12px;
-    margin-right: 8px;
-  }
+  @media (max-width: 300px) {
 
-  #titulo {
-    font-size: 18px;
-  }
+    #titulo {
+      margin-top: 23px;
+    }
 
-  #love-txt,
-  .especial {
-    font-size: 25px;
-  }
+    li {
+      font-size: 12px;
+      margin-right: 8px;
+    }
 
-  #blog-txt {
-    font-size: 35px;
-    margin-top: -25px;
-    margin-left: 20px;
-  }
+    #titulo {
+      font-size: 18px;
+    }
 
-  #subtitulo {
-    margin-top: -25px;
-    font-size: 9px;
-  }
+    #love-txt,
+    .especial {
+      font-size: 25px;
+    }
 
-  #suptitulo {
-    font-size: 7px;
-    margin-right: 6px;
-    margin-bottom: -15px;
-  }
+    #blog-txt {
+      font-size: 35px;
+      margin-top: -25px;
+      margin-left: 20px;
+    }
 
-  #nome {
-    font-size: 8px;
-  }
+    #subtitulo {
+      margin-top: -25px;
+      font-size: 9px;
+    }
 
-  #img {
-    width: 220px;
-    margin-bottom: 10px;
-  }
+    #suptitulo {
+      font-size: 7px;
+      margin-right: 6px;
+      margin-bottom: -15px;
+    }
 
-  #txt {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 60px;
-  }
+    #nome {
+      font-size: 8px;
+    }
 
-  #sobre,
-  #txt-nome {
-    font-size: 22px;
-  }
+    #img {
+      width: 220px;
+      margin-bottom: 10px;
+    }
 
-  #eu-png,
-  #img {
-    width: 220px;
-    height: 220px;
-  }
+    #txt {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 60px;
+    }
 
-}
+    #sobre,
+    #txt-nome,
+    #bgYellowPlus {
+      font-size: 18px;
+    }
+
+    #eu-png,
+    #img {
+      width: 220px;
+      height: 220px;
+    }
+
+  }
