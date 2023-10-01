@@ -86,5 +86,11 @@ function dark() {
       claro.textContent = "Dark";
     }
   }
+
+  titulo.addEventListener('click', topo);
+
+  function topo() {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 }
 

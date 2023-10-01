@@ -14,6 +14,9 @@ header {
   font-family: montreal, sans-serif;
   font-weight: bold;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 @font-face {
@@ -29,9 +32,11 @@ header {
 #titulo {
   font-size: 30px;
   color: black;
+  display: block;
   cursor: pointer;
   border-top: 3px solid;
   border-bottom: 3px solid;
+  margin-top: 25px;
 }
 
 /* MODELOS DE ALTERACAO INICIO*/
@@ -68,7 +73,6 @@ header {
   border-left: 4px solid;
   text-align: left;
   padding-left: 12px;
-
 }
 
 #icones {
@@ -149,6 +153,7 @@ ul {
   list-style-type: none;
   align-items: center;
   color: black;
+  margin-top: 27px;
 }
 
 /* Aqui estou dizendo que todo item que
@@ -171,7 +176,7 @@ li:hover {
 
 main {
   width: 100%;
-  height: 518px;
+  height: 545px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +207,8 @@ body {
 #blog-txt,
 #suptitulo,
 #subtitulo,
-#nome {
+#nome,
+#txt-nome {
   font-family: montreal, sans-serif;
   text-align: center;
 }
@@ -283,13 +289,6 @@ body {
     font-size: 12px;
   }
 
-  #love-txt,
-  .especial,
-  #blog-txt,
-  #suptitulo {
-    text-align: center;
-  }
-
   #div-titulo {
     margin-left: 12px;
   }
@@ -324,26 +323,22 @@ body {
     margin-bottom: -40px;
   }
 
-  #love-txt,
-  .especial,
-  #blog-txt,
-  #subtitulo,
-  #suptitulo {
-    text-align: center;
-  }
-
   #nome {
     font-size: 11px;
+  }
+
+  ul {
+    margin-top: 25px;
   }
 
   @media (max-width: 440px) {
 
     #titulo {
-      margin-top: 28px;
+      margin-top: 24px;
     }
 
     ul {
-      margin-top: 10px;
+      margin-top: 28px;
     }
 
     li {
@@ -381,21 +376,9 @@ body {
       font-size: 12px;
     }
 
-    #love-txt,
-    .especial,
-    #blog-txt,
-    #subtitulo,
-    #suptitulo {
-      text-align: center;
-    }
-
     #info {
       margin-left: 40px;
       margin-right: 40px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap;
     }
 
     #sobre {
@@ -415,7 +398,7 @@ body {
 
     #img {
       width: 280px;
-      margin-bottom: 15px;
+      margin-bottom: 5px;
     }
 
     #txt {
@@ -426,9 +409,6 @@ body {
 
     #txt-nome {
       font-size: 25px;
-      font-weight: bold;
-      text-align: center;
-      font-family: montreal;
     }
 
     #eu-png {
@@ -444,11 +424,6 @@ body {
   #titulo {
     margin-top: 23px;
   }
-
-  ul {
-    margin-top: 10px
-  }
-
 
   li {
     font-size: 12px;
@@ -485,14 +460,6 @@ body {
     font-size: 8px;
   }
 
-  #love-txt,
-  .especial,
-  #blog-txt,
-  #subtitulo,
-  #suptitulo {
-    text-align: center;
-  }
-
   #img {
     width: 220px;
     margin-bottom: 10px;
@@ -504,22 +471,15 @@ body {
     margin-bottom: 60px;
   }
 
-  #sobre {
-    font-size: 22px;
-  }
-
+  #sobre,
   #txt-nome {
     font-size: 22px;
   }
 
+  #eu-png,
   #img {
-    width: 220px;
-  }
-
-  #eu-png {
     width: 220px;
     height: 220px;
   }
-
 
 }
