@@ -197,6 +197,7 @@ body {
   color: #b2b2b2;
 }
 
+hr {}
 #love-txt,
 .especial {
   font-size: 80px;
@@ -414,6 +415,10 @@ body {
     #eu-png {
       width: 280px;
       height: 280px;
+    }
+
+    #bgYellowPlus {
+      font-size: 22px;
     }
 
   }
