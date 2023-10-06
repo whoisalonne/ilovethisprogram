@@ -39,7 +39,6 @@ header {
   margin-top: 25px;
 }
 
-/* MODELOS DE ALTERACAO INICIO*/
 
 /* Tag principal da seção sobre mim */
 
@@ -96,7 +95,7 @@ a:visited {
 
 a {
   text-decoration: none;
-  transition: color ease 0.2s;
+  transition: color ease 0.5s;
 }
 
 #borda-xp {
@@ -122,7 +121,6 @@ a {
 #txt-nome {
   font-size: 30px;
   font-weight: bold;
-  text-align: center;
   font-family: montreal;
 }
 
