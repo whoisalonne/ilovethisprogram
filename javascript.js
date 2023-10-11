@@ -6,20 +6,20 @@ let amor = document.getElementById('amor');
 let main = document.getElementById('conteiner');
 let nome = document.getElementById('nome');
 let corpo = document.body;
+let link = document.getElementById('link') // Necessário para fazer com que o a aninhado no li sofra o not hover devidamente
 let cabeca = document.getElementById('cabeca');
-let ul = document.getElementById('lista-cabeca');
-let link = document.getElementById('link')
 let bgYborder = document.getElementById('bgYellowPlus');
 let bgYellow = document.querySelectorAll('.bgYellow');
 let imgContent = document.getElementById('img');
-let pH = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6'); //Adiciona as tags de 'p' e 'h(geral)'
+let border = document.getElementById('borderW')
+let pH = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, ul'); //Adiciona as tags de 'p', 'ul', 'a' e 'h(geral)'
 
+let colorWhite = [titulo, link];
 let bgYArray = Array.from(bgYellow);
 let pHArray = Array.from(pH);
 
-let colorWhite = [titulo, ul, link, sobre];
-let bgBlack = [main, cabeca, corpo];
-let colorWhiteAll = [colorWhite, pHArray] //Elementos que devem ser brancos (especifícos, paragráfos, titulos)
+let bgBlack = [main, cabeca, corpo];// Elementos que devem ter o background brancos/pretos
+let colorWhiteAll = [pHArray, colorWhite] //Elementos que devem ser brancos (especifícos, paragráfos, titulos)
 
 claro.addEventListener('click', dark);
 
@@ -41,6 +41,7 @@ function dark() {
     nome.style.color = "#b2b2b2";
     sub.style.color = "#616161";
     imgContent.style.borderColor = 'white';
+    border.style.borderColor = 'white';
 
     bgYborder.style.backgroundColor = '#8b9aff'
     claro.textContent = "Light";
@@ -61,6 +62,7 @@ function dark() {
     nome.style.color = "#616161";
     sub.style.color = "#616161";
     bgYborder.style.color = 'black';
+    border.style.borderColor = 'black';
 
     imgContent.style.borderColor = 'black';
     bgYborder.style.backgroundColor = 'yellow'
