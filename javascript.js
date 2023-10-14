@@ -13,6 +13,7 @@ let bgYellow = document.querySelectorAll('.bgYellow');
 let imgContent = document.getElementById('img');
 let border = document.getElementById('borderW')
 let pH = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, ul'); //Adiciona as tags de 'p', 'ul', 'a' e 'h(geral)'
+let github = document.getElementById('github')
 
 let colorWhite = [titulo, link];
 let bgYArray = Array.from(bgYellow);
@@ -42,7 +43,7 @@ function dark() {
     sub.style.color = "#616161";
     imgContent.style.borderColor = 'white';
     border.style.borderColor = 'white';
-
+    github.setAttribute('src', 'img/github-logopreto.png')
     bgYborder.style.backgroundColor = '#8b9aff'
     claro.textContent = "Light";
   }
@@ -63,9 +64,9 @@ function dark() {
     sub.style.color = "#616161";
     bgYborder.style.color = 'black';
     border.style.borderColor = 'black';
-
     imgContent.style.borderColor = 'black';
     bgYborder.style.backgroundColor = 'yellow'
+    github.setAttribute('src', 'img/github-logobranco.png')
     claro.textContent = "Dark";
   }
 }
