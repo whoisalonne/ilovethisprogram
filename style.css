@@ -233,6 +233,7 @@ body {
   margin-left: 30px;
   font-size: 16px;
   margin-bottom: -70px;
+  margin-top: 90px;
   color: #b2b2b2;
 }
 
@@ -366,31 +367,31 @@ body {
 
   @media (max-width: 750px) {
 
-      #love-txt,
-      .especial {
-        font-size: 60px;
-        line-height: 70px;
-      }
+    #love-txt,
+    .especial {
+      font-size: 60px;
+      line-height: 70px;
+    }
 
-      #blog-txt {
-        font-size: 95px;
-        margin-left: 45px;
-      }
+    #blog-txt {
+      font-size: 95px;
+      margin-left: 45px;
+    }
 
-      #subtitulo {
-        margin-top: -35px;
-        font-size: 12px;
-      }
+    #subtitulo {
+      margin-top: -35px;
+      font-size: 12px;
+    }
 
-      #suptitulo {
-        margin-left: 22px;
-        font-size: 11px;
-        margin-bottom: -50px;
-      }
+    #suptitulo {
+      margin-left: 22px;
+      font-size: 11px;
+      margin-bottom: -50px;
+    }
 
-      #nome {
-        font-size: 12px;
-      }
+    #nome {
+      font-size: 12px;
+    }
 
   }
 
@@ -479,8 +480,7 @@ body {
 
       #suptitulo {
         font-size: 11px;
-        margin-right: 30px;
-        margin-bottom: -34px;
+        margin-bottom: -32px;
       }
 
       #nome {
@@ -534,6 +534,10 @@ body {
 
       #github {
         width: 50px;
+      }
+
+      #heart {
+        display: none;
       }
 
     }
@@ -611,7 +615,9 @@ body {
       height: 220px;
     }
 
-    #github {width: 45px;
-    margin-left: 10px;}
+    #github {
+      width: 45px;
+      margin-left: 10px;
+    }
 
   }
