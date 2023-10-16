@@ -94,7 +94,7 @@ a {
 }
 
 #github {
-  width: 70px;
+  width: 60px;
   display: block;
   z-index: 5;
 }
@@ -131,11 +131,29 @@ a {
   font-family: montreal;
 }
 
-#sobre {
+#sobre,
+#projetos {
   text-align: left;
   font-size: 35px;
   font-family: montreal;
   margin-left: 15px;
+}
+
+.borda {
+  border-bottom: 2px solid;
+}
+
+#projetos-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 0;
+}
+
+#alerta {
+  font-family: montreal;
+  font-size: 45px;
+  text-align: center;
 }
 
 #eu-png {
@@ -393,6 +411,8 @@ body {
       font-size: 12px;
     }
 
+    #github {width: 50px;}
+
   }
 
   @media (max-width: 550px) {
@@ -432,7 +452,7 @@ body {
       margin-top: 25px;
     }
 
-    #sobre {
+    #sobre, #projetos {
       font-size: 24px;
       margin-left: 15px;
     }
@@ -444,6 +464,10 @@ body {
     #bgYellowPlus {
       font-size: 25px;
     }
+
+    #alerta {font-size: 25px;}
+
+    #github {display: none;}
 
     @media (max-width: 440px) {
 
@@ -619,5 +643,7 @@ body {
       width: 45px;
       margin-left: 10px;
     }
+
+    #alerta {font-size: 20px;}
 
   }
