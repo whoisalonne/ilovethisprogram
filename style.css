@@ -99,20 +99,33 @@ a {
 }
 
 #contato-links {
-  width: 30%;
+  width: 10%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin-left: 3%;
+  margin-bottom: 3%;
 }
 
-#github {
+#github,
+#linkedin {
   width: 60px;
-  display: block;
-  z-index: 5;
+  transition: 0.5s ease;
+  margin-left: 10px;
+}
+
+#linkedin {
+  border-radius: 50%;
+}
+
+#txt-cont, #link-cont, #paragrafo-cont {text-align: center;}
+
+#link-cont:hover {
+  text-decoration: underline;
 }
 
 #gitlink {
-  margin-right: 50px;
+  margin-right: 40px;
   width: 0;
 }
 
@@ -165,6 +178,7 @@ a {
 #alerta {
   font-family: montreal;
   font-size: 45px;
+  margin: 10% 10%;
   text-align: center;
 }
 
@@ -293,6 +307,32 @@ body {
   color: #616161;
 }
 
+#contrate {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: montreal;
+}
+
+#txt-cont {
+  margin: 0, 10px;
+}
+
+#paragrafo-cont {
+  margin-top: 15%;
+  font-size: 17px;
+}
+
+#link-cont {
+  display: block;
+  margin-bottom: 18%;
+  font-size: 55px;
+}
+
+#rodape {text-align: center;
+font-family: montreal;}
+
 ::-webkit-scrollbar {
   width: 5px;
   background: black;
@@ -341,7 +381,7 @@ body {
   #love-txt,
   .especial {
     font-size: 60px;
-    line-height: 1000px;
+    line-height: 68px;
   }
 
   #blog-txt {
@@ -350,7 +390,7 @@ body {
   }
 
   #subtitulo {
-    margin-top: -80px;
+    margin-top: -30px;
     font-size: 12px;
   }
 
@@ -380,6 +420,10 @@ body {
 
   #bgYellowPlus {
     font-size: 22px;
+  }
+
+  #github {
+    margin-left: 10px;
   }
 }
 
@@ -472,10 +516,7 @@ body {
     font-size: 25px;
   }
 
-  #github {
-    display: none;
-  }
-
+  #rodape {font-size: 10px;}
 }
 
 @media (max-width: 440px) {
@@ -573,6 +614,15 @@ body {
     display: none;
   }
 
+  #paragrafo-cont,
+  #txt-cont {
+    font-size: 14px;
+  }
+
+  #link-cont {
+    font-size: 35px;
+  }
+
 }
 
 
@@ -655,5 +705,16 @@ body {
 
   #alerta {
     font-size: 20px;
+  }
+
+  #paragrafo-cont,
+  #txt-cont {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  #link-cont {
+    font-size: 25px;
   }
 }

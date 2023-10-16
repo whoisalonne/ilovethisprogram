@@ -6,16 +6,16 @@ let amor = document.getElementById('amor');
 let main = document.getElementById('conteiner');
 let nome = document.getElementById('nome');
 let corpo = document.body;
-let link = document.getElementById('link') // Necessário para fazer com que o a aninhado no li sofra o not hover devidamente
 let cabeca = document.getElementById('cabeca');
 let bgYborder = document.getElementById('bgYellowPlus');
 let bgYellow = document.querySelectorAll('.bgYellow');
 let imgContent = document.getElementById('img');
-let border = document.getElementById('borderW')
+let border = document.getElementById('borderW');
 let pH = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, ul'); //Adiciona as tags de 'p', 'ul', 'a' e 'h(geral)'
-let github = document.getElementById('github')
+let github = document.getElementById('github');
+let linkedin = document.getElementById('linkedin');
 
-let colorWhite = [titulo, link];
+let colorWhite = [titulo];
 let bgYArray = Array.from(bgYellow);
 let pHArray = Array.from(pH);
 
@@ -44,6 +44,7 @@ function dark() {
     imgContent.style.borderColor = 'white';
     border.style.borderColor = 'white';
     github.setAttribute('src', 'img/github-logopreto.png')
+    linkedin.setAttribute('src', 'img/linkedin-logopreto.png')
     bgYborder.style.backgroundColor = '#8b9aff'
     claro.textContent = "Light";
   }
@@ -67,6 +68,7 @@ function dark() {
     imgContent.style.borderColor = 'black';
     bgYborder.style.backgroundColor = 'yellow'
     github.setAttribute('src', 'img/github-logobranco.png')
+    linkedin.setAttribute('src', 'img/linkedin-logobranco.png')
     claro.textContent = "Dark";
   }
 }
