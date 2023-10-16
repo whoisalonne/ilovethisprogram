@@ -39,7 +39,120 @@ header {
   margin-top: 25px;
 }
 
-/* Tag principal da seção sobre mim */
+#lista-cabeca {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin-top: 27px;
+}
+
+/* Aqui estou dizendo que todo item que
+  estiver dentro do elemento pai (ul) que
+  não estiver sobre o hover, deve ficar com a cor cinza*/
+
+#lista-cabeca:hover :not(:hover) {
+  color: gray;
+}
+
+#lista-cabeca li {
+  margin-right: 20px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+#lista-cabeca li:hover {
+  transform: scale(1.15);
+}
+
+a:visited {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+main {
+  width: 100%;
+  height: 545px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+main,
+header,
+#lista-cabeca li,
+body {
+  transition: 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+#suptitulo {
+  margin-left: 30px;
+  font-size: 16px;
+  margin-bottom: -70px;
+  margin-top: 90px;
+  color: #b2b2b2;
+}
+
+#nome {
+  font-size: 17px;
+  color: #616161;
+}
+
+#love-txt,
+.especial {
+  font-size: 80px;
+  line-height: 95px;
+}
+
+#blog-txt {
+  font-size: 130px;
+  margin-left: 55px;
+}
+
+#love-txt,
+.especial,
+#suptitulo,
+#subtitulo,
+#nome,
+#habilits,
+#txt-nome {
+  font-family: montreal, sans-serif;
+  text-align: center;
+}
+
+#subtitulo {
+  margin-top: -50px;
+  font-size: 16px;
+  margin-left: 60px;
+  color: #616161;
+}
+
+#sobre,
+#projetos {
+  text-align: left;
+  font-size: 35px;
+  font-family: montreal;
+  margin-left: 15px;
+}
+
+#borda-xp {
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  padding-left: 8px;
+}
+
+#bgYellowPlus {
+  border-top: 2px solid;
+  border-right: 2px solid;
+  background-color: yellow;
+  padding-right: 8px;
+  font-size: 33px;
+}
 
 #info {
   margin-left: 40px;
@@ -72,81 +185,10 @@ header {
   filter: grayscale(0%);
 }
 
-/* div da legenda ao lado da imagem */
 #txt {
   width: 60%;
   margin-top: 20px;
   margin-bottom: 60px;
-}
-
-#paragrafo {
-  border-left: 4px solid;
-  text-align: left;
-  padding-left: 12px;
-}
-
-.bgYellow {
-  background-color: yellow;
-}
-
-a:visited {
-  color: inherit;
-}
-
-a {
-  text-decoration: none;
-  transition: 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-}
-
-#contato-links {
-  width: 10%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 3%;
-  margin-bottom: 3%;
-}
-
-#github,
-#linkedin {
-  width: 60px;
-  transition: 0.5s ease;
-  margin-left: 10px;
-}
-
-#linkedin {
-  border-radius: 50%;
-}
-
-#txt-cont, #link-cont, #paragrafo-cont {text-align: center;}
-
-#link-cont:hover {
-  text-decoration: underline;
-}
-
-#gitlink {
-  margin-right: 40px;
-  width: 0;
-}
-
-#borda-xp {
-  border-bottom: 2px solid;
-  border-left: 2px solid;
-  padding-left: 8px;
-}
-
-#borda {
-  border-right: 2px solid;
-  border-bottom: 2px solid;
-  padding: 5px 8px 5px 0;
-}
-
-#bgYellowPlus {
-  border-top: 2px solid;
-  border-right: 2px solid;
-  background-color: yellow;
-  padding-right: 8px;
-  font-size: 33px;
 }
 
 #txt-nome,
@@ -156,12 +198,52 @@ a {
   font-family: montreal;
 }
 
-#sobre,
-#projetos {
+.bgYellow {
+  background-color: yellow;
+}
+
+#borda {
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  padding: 5px 8px 5px 0;
+}
+
+#paragrafo {
+  border-left: 4px solid;
   text-align: left;
-  font-size: 35px;
-  font-family: montreal;
-  margin-left: 15px;
+  padding-left: 12px;
+}
+
+#infoOcult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#listaOculta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+#listaOculta li {
+  font-size: 1em;
+  margin: 3%;
+  font-weight: bold;
+}
+
+#estiloLi {
+  list-style-type: none;
+}
+
+#borderW {
+  margin-top: -10px;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  width: 70%;
+  max-width: 800px;
 }
 
 .borda {
@@ -182,131 +264,6 @@ a {
   text-align: center;
 }
 
-/* MODELOS DE ALTERACAO FIM*/
-
-#lista-cabeca {
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-  margin-top: 27px;
-}
-
-/* Aqui estou dizendo que todo item que
-  estiver dentro do elemento pai (ul) que
-  não estiver sobre o hover, deve ficar com a cor cinza*/
-
-#lista-cabeca:hover :not(:hover) {
-  color: gray;
-}
-
-#lista-cabeca li {
-  margin-right: 20px;
-  font-size: 19px;
-  cursor: pointer;
-}
-
-#lista-cabeca li:hover {
-  transform: scale(1.15);
-}
-
-#infoOcult {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#listaOculta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 0;
-}
-
-#estiloLi {
-  list-style-type: none;
-}
-
-#listaOculta li {
-  font-size: 1em;
-  /* Tamanho de fonte relativo */
-  margin: 3%;
-  /* Espaçamento entre os itens da lista */
-  font-weight: bold;
-}
-
-#borderW {
-  margin-top: -10px;
-  ;
-  border-top: 3px solid;
-  border-bottom: 3px solid;
-  width: 70%;
-  max-width: 800px;
-}
-
-main {
-  width: 100%;
-  height: 545px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-}
-
-main,
-header,
-li,
-body {
-  transition: 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-}
-
-#suptitulo {
-  margin-left: 30px;
-  font-size: 16px;
-  margin-bottom: -70px;
-  margin-top: 90px;
-  color: #b2b2b2;
-}
-
-#love-txt,
-.especial {
-  font-size: 80px;
-  line-height: 95px;
-}
-
-#love-txt,
-.especial,
-#suptitulo,
-#subtitulo,
-#nome,
-#habilits,
-#txt-nome {
-  font-family: montreal, sans-serif;
-  text-align: center;
-}
-
-#blog-txt {
-  font-size: 130px;
-  margin-left: 55px;
-}
-
-#amor {
-  color: #E21F14;
-}
-
-#subtitulo {
-  margin-top: -50px;
-  font-size: 16px;
-  margin-left: 60px;
-  color: #616161;
-}
-
-#nome {
-  font-size: 17px;
-  color: #616161;
-}
-
 #contrate {
   display: flex;
   justify-content: center;
@@ -317,6 +274,7 @@ body {
 
 #txt-cont {
   margin: 0, 10px;
+  text-align: center;
 }
 
 #paragrafo-cont {
@@ -330,8 +288,35 @@ body {
   font-size: 55px;
 }
 
-#rodape {text-align: center;
-font-family: montreal;}
+#link-cont:hover {
+  text-decoration: underline;
+}
+
+#contato-links {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 3%;
+  margin-bottom: 3%;
+}
+
+#gitlink {
+  margin-right: 40px;
+  width: 0;
+}
+
+#github,
+#linkedin {
+  width: 60px;
+  transition: 0.5s ease;
+  margin-left: 10px;
+}
+
+#rodape {
+  text-align: center;
+  font-family: montreal;
+}
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -345,13 +330,14 @@ font-family: montreal;}
 }
 
 @media (max-width: 915px) {
-  #eu-png {
-    width: 290px;
-    height: 280px;
-  }
 
   #img {
     width: 290px;
+  }
+
+  #eu-png {
+    width: 290px;
+    height: 280px;
   }
 
   #paragrafo {
@@ -364,10 +350,6 @@ font-family: montreal;}
   #lista-cabeca li {
     margin-right: 18px;
     font-size: 17px;
-  }
-
-  #listaOculta {
-    list-style-type: none;
   }
 
   #div-titulo {
@@ -384,14 +366,13 @@ font-family: montreal;}
     line-height: 68px;
   }
 
+  #nome {
+    font-size: 12px;
+  }
+
   #blog-txt {
     font-size: 95px;
     margin-left: 45px;
-  }
-
-  #subtitulo {
-    margin-top: -30px;
-    font-size: 12px;
   }
 
   #suptitulo {
@@ -400,12 +381,9 @@ font-family: montreal;}
     margin-bottom: -50px;
   }
 
-  #nome {
+  #subtitulo {
+    margin-top: -30px;
     font-size: 12px;
-  }
-
-  #div-titulo {
-    margin-left: 12px;
   }
 
   #img {
@@ -422,12 +400,26 @@ font-family: montreal;}
     font-size: 22px;
   }
 
+  #listaOculta {
+    list-style-type: none;
+  }
+
   #github {
     margin-left: 10px;
   }
 }
 
 @media (max-width: 750px) {
+
+  #suptitulo {
+    margin-left: 22px;
+    font-size: 11px;
+    margin-bottom: -50px;
+  }
+
+  #nome {
+    font-size: 12px;
+  }
 
   #love-txt,
   .especial {
@@ -445,23 +437,26 @@ font-family: montreal;}
     font-size: 12px;
   }
 
-  #suptitulo {
-    margin-left: 22px;
-    font-size: 11px;
-    margin-bottom: -50px;
-  }
-
-  #nome {
-    font-size: 12px;
-  }
-
   #github {
     width: 50px;
   }
-
 }
 
 @media (max-width: 550px) {
+
+  #lista-cabeca {
+    margin-top: 25px;
+  }
+
+  #suptitulo {
+    font-size: 10px;
+    margin-right: 6px;
+    margin-bottom: -40px;
+  }
+
+  #nome {
+    font-size: 11px;
+  }
 
   #love-txt,
   .especial {
@@ -484,39 +479,27 @@ font-family: montreal;}
     margin-right: 30px;
   }
 
-  #suptitulo {
-    font-size: 10px;
-    margin-right: 6px;
-    margin-bottom: -40px;
-  }
-
-  #nome {
-    font-size: 11px;
-  }
-
-  #lista-cabeca {
-    margin-top: 25px;
-  }
-
   #sobre,
   #projetos {
     font-size: 24px;
     margin-left: 15px;
   }
 
-  #txt-nome {
-    font-size: 23px;
-  }
-
   #bgYellowPlus {
     font-size: 25px;
+  }
+
+  #txt-nome {
+    font-size: 23px;
   }
 
   #alerta {
     font-size: 25px;
   }
 
-  #rodape {font-size: 10px;}
+  #rodape {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -525,13 +508,18 @@ font-family: montreal;}
     margin-top: 24px;
   }
 
-  li {
+  #lista-cabeca li {
     font-size: 15px;
     margin-right: 14px;
   }
 
-  #titulo {
-    font-size: 24px
+  #suptitulo {
+    font-size: 11px;
+    margin-bottom: -32px;
+  }
+
+  #nome {
+    font-size: 12px;
   }
 
   #love-txt,
@@ -552,13 +540,8 @@ font-family: montreal;}
     margin-left: 55px;
   }
 
-  #suptitulo {
-    font-size: 11px;
-    margin-bottom: -32px;
-  }
-
-  #nome {
-    font-size: 12px;
+  #heart {
+    display: none;
   }
 
   #info {
@@ -571,19 +554,24 @@ font-family: montreal;}
     margin-left: 15px;
   }
 
-  #borda-xp {
-    border-left: 2px solid;
-    padding-left: 5px;
-  }
-
   #bgYellowPlus {
     font-size: 21px;
     padding-right: 4px;
   }
 
+  #borda-xp {
+    border-left: 2px solid;
+    padding-left: 5px;
+  }
+
   #img {
     width: 280px;
     margin-bottom: 5px;
+  }
+
+  #eu-png {
+    width: 280px;
+    height: 280px;
   }
 
   #txt {
@@ -597,23 +585,6 @@ font-family: montreal;}
     font-size: 25px;
   }
 
-  #eu-png {
-    width: 280px;
-    height: 280px;
-  }
-
-  #bgYellowPlus {
-    font-size: 22px;
-  }
-
-  #github {
-    width: 50px;
-  }
-
-  #heart {
-    display: none;
-  }
-
   #paragrafo-cont,
   #txt-cont {
     font-size: 14px;
@@ -621,6 +592,10 @@ font-family: montreal;}
 
   #link-cont {
     font-size: 35px;
+  }
+
+  #github {
+    width: 50px;
   }
 
 }
@@ -644,6 +619,16 @@ font-family: montreal;}
     margin-right: 10px;
   }
 
+  #suptitulo {
+    font-size: 8px;
+    margin-right: 20px;
+    margin-bottom: -20px;
+  }
+
+  #nome {
+    font-size: 9px;
+  }
+
   #love-txt,
   .especial {
     font-size: 30px;
@@ -659,19 +644,14 @@ font-family: montreal;}
     margin-top: -15px;
   }
 
-  #suptitulo {
-    font-size: 8px;
-    margin-right: 20px;
-    margin-bottom: -20px;
+  #img {
+    margin-bottom: 10px;
   }
 
-  #nome {
-    font-size: 9px;
-  }
-
+  #eu-png,
   #img {
     width: 220px;
-    margin-bottom: 10px;
+    height: 220px;
   }
 
   #txt {
@@ -692,17 +672,6 @@ font-family: montreal;}
     font-size: 15px;
   }
 
-  #eu-png,
-  #img {
-    width: 220px;
-    height: 220px;
-  }
-
-  #github {
-    width: 45px;
-    margin-left: 10px;
-  }
-
   #alerta {
     font-size: 20px;
   }
@@ -717,4 +686,10 @@ font-family: montreal;}
   #link-cont {
     font-size: 25px;
   }
+
+  #github {
+    width: 45px;
+    margin-left: 10px;
+  }
+
 }
