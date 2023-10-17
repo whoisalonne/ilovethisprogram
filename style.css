@@ -109,7 +109,9 @@ body {
   line-height: 95px;
 }
 
-#amor {color:#E21F14}
+#amor {
+  color: #E21F14
+}
 
 #blog-txt {
   font-size: 130px;
@@ -122,7 +124,12 @@ body {
 #subtitulo,
 #nome,
 #habilits,
-#txt-nome, #loading, #sobre, #projetos, #alerta, #rodape {
+#txt-nome,
+#loading,
+#sobre,
+#projetos,
+#alerta,
+#rodape {
   font-family: montreal, sans-serif;
   text-align: center;
 }
@@ -264,7 +271,9 @@ body {
   text-align: center;
 }
 
-#loading {color:#b2b2b2;}
+#loading {
+  color: #b2b2b2;
+}
 
 #contrate {
   display: flex;
@@ -383,6 +392,10 @@ body {
     font-size: 12px;
   }
 
+  #bgYellowPlus {
+    font-size: 33px;
+  }
+
   #img {
     width: 300px;
     margin-bottom: 5px;
@@ -391,10 +404,6 @@ body {
   #eu-png {
     width: 300px;
     height: 280px;
-  }
-
-  #bgYellowPlus {
-    font-size: 22px;
   }
 
   #listaOculta {
