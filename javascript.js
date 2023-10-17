@@ -11,6 +11,7 @@ let bgYborder = document.getElementById('bgYellowPlus');
 let bgYellow = document.querySelectorAll('.bgYellow');
 let imgContent = document.getElementById('img');
 let border = document.getElementById('borderW');
+let loading = document.getElementById('loading');
 let pH = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, ul'); //Adiciona as tags de 'p', 'ul', 'a' e 'h(geral)'
 let github = document.getElementById('github');
 let linkedin = document.getElementById('linkedin');
@@ -43,6 +44,7 @@ function dark() {
     sub.style.color = "#616161";
     imgContent.style.borderColor = 'white';
     border.style.borderColor = 'white';
+    loading.style.color = "#b2b2b2";
     github.setAttribute('src', 'img/github-logopreto.png')
     linkedin.setAttribute('src', 'img/linkedin-logopreto.png')
     bgYborder.style.backgroundColor = '#8b9aff'
@@ -66,6 +68,7 @@ function dark() {
     bgYborder.style.color = 'black';
     border.style.borderColor = 'black';
     imgContent.style.borderColor = 'black';
+    loading.style.color = "#616161";
     bgYborder.style.backgroundColor = 'yellow'
     github.setAttribute('src', 'img/github-logobranco.png')
     linkedin.setAttribute('src', 'img/linkedin-logobranco.png')

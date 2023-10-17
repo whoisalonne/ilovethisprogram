@@ -109,6 +109,8 @@ body {
   line-height: 95px;
 }
 
+#amor {color:#E21F14}
+
 #blog-txt {
   font-size: 130px;
   margin-left: 55px;
@@ -120,7 +122,7 @@ body {
 #subtitulo,
 #nome,
 #habilits,
-#txt-nome {
+#txt-nome, #loading, #sobre, #projetos, #alerta, #rodape {
   font-family: montreal, sans-serif;
   text-align: center;
 }
@@ -128,7 +130,7 @@ body {
 #subtitulo {
   margin-top: -50px;
   font-size: 16px;
-  margin-left: 60px;
+  margin-left: 30px;
   color: #616161;
 }
 
@@ -136,7 +138,6 @@ body {
 #projetos {
   text-align: left;
   font-size: 35px;
-  font-family: montreal;
   margin-left: 15px;
 }
 
@@ -195,7 +196,6 @@ body {
 #habilits {
   font-size: 30px;
   font-weight: bold;
-  font-family: montreal;
 }
 
 .bgYellow {
@@ -253,16 +253,18 @@ body {
 #projetos-section {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   margin: 10% 0;
 }
 
 #alerta {
-  font-family: montreal;
   font-size: 45px;
   margin: 10% 10%;
   text-align: center;
 }
+
+#loading {color:#b2b2b2;}
 
 #contrate {
   display: flex;
@@ -311,11 +313,6 @@ body {
   width: 60px;
   transition: 0.5s ease;
   margin-left: 10px;
-}
-
-#rodape {
-  text-align: center;
-  font-family: montreal;
 }
 
 ::-webkit-scrollbar {
