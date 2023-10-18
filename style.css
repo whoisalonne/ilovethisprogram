@@ -504,6 +504,12 @@ body {
     font-size: 25px;
   }
 
+  #txt-cont,
+  #link-cont {
+    text-align: center;
+    display: block;
+  }
+
   #rodape {
     font-size: 10px;
   }
@@ -545,10 +551,6 @@ body {
     margin-top: -22px;
     font-size: 11px;
     margin-left: 55px;
-  }
-
-  #heart {
-    display: none;
   }
 
   #info {

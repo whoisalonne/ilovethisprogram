@@ -1,3 +1,5 @@
+// Variavéis globais representando artifícios da página.
+
 let titulo = document.getElementById('titulo');
 let claro = document.getElementById('dark');
 let sup = document.getElementById('suptitulo');
@@ -12,9 +14,20 @@ let bgYellow = document.querySelectorAll('.bgYellow');
 let imgContent = document.getElementById('img');
 let border = document.getElementById('borderW');
 let loading = document.getElementById('loading');
-let pH = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, ul'); //Adiciona as tags de 'p', 'ul', 'a' e 'h(geral)'
+let pH = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, ul'); //Adiciona as tags de 'p', 'ul' e 'h(geral)'
+
+//Variavéis necessárias para atualização do ano no copyright (footer)
+
+let data = document.getElementById('data');
+let get = new Date().getFullYear()
+data.innerText = get;
+
+//Variavéis globais representando as imagens da página
+
 let github = document.getElementById('github');
 let linkedin = document.getElementById('linkedin');
+
+//Conjunto de variavéis globais representando arrays
 
 let colorWhite = [titulo];
 let bgYArray = Array.from(bgYellow);
@@ -23,9 +36,9 @@ let pHArray = Array.from(pH);
 let bgBlack = [main, cabeca, corpo];// Elementos que devem ter o background brancos/pretos
 let colorWhiteAll = [pHArray, colorWhite] //Elementos que devem ser brancos (especifícos, paragráfos, titulos)
 
-claro.addEventListener('click', dark);
-
 // Função dark e códigos de transição em arrays
+
+claro.addEventListener('click', dark);
 
 function dark() {
   if (main.style.backgroundColor == "white") {
