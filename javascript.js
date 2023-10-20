@@ -16,12 +16,6 @@ let border = document.getElementById('borderW');
 let loading = document.getElementById('loading');
 let pH = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, ul'); //Adiciona as tags de 'p', 'ul' e 'h(geral)'
 
-//Variavéis necessárias para atualização do ano no copyright (footer)
-
-let data = document.getElementById('data');
-let get = new Date().getFullYear()
-data.innerText = get;
-
 //Variavéis globais representando as imagens da página
 
 let github = document.getElementById('github');
@@ -89,8 +83,18 @@ function dark() {
   }
 }
 
+//Função necessária para scrollar ao topo qunado clicado no titulo (ILTP)
+
 titulo.addEventListener('click', topo);
 
-  function topo() {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+function topo() {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+//Função necessária para atualização do ano no copyright (footer)
+
+setInterval(() => {
+  let data = document.getElementById('data');
+  let get = new Date().getFullYear()
+  data.innerText = get;
+}, 1000)
