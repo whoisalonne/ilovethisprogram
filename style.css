@@ -111,7 +111,9 @@ body {
 }
 
 #amor {
-  color: #E21F14
+  color: #E21F14;
+  transition: ease 1s;
+  animation: fadeInOut 5s infinite;
 }
 
 #blog-txt {
@@ -324,6 +326,24 @@ body {
   width: 60px;
   transition: 0.5s ease;
   margin-left: 10px;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 ::-webkit-scrollbar {

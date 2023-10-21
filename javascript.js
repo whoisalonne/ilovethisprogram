@@ -21,6 +21,12 @@ let pH = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, ul'); //Adiciona 
 let github = document.getElementById('github');
 let linkedin = document.getElementById('linkedin');
 
+
+//Variavéis globais representando o sistema de transição de nomes do titulo
+
+let nomes = ['LOVE', 'AMO', "J'AIME", 'SUKI'];
+let contador = 0
+
 //Conjunto de variavéis globais representando arrays
 
 let colorWhite = [titulo];
@@ -38,11 +44,11 @@ function dark() {
   if (main.style.backgroundColor == "white") {
 
     // Percorre os arrays e aplica estilos - Esuro
-    colorWhiteAll.forEach(function (item) { item.forEach(function (elemento) { elemento.style.color = 'white' }) })
+    colorWhiteAll.forEach((item) => { item.forEach((elemento) => { elemento.style.color = 'white' }) })
 
-    bgYArray.forEach(function (item) { item.style.backgroundColor = '#8b9aff'; })
+    bgYArray.forEach((item) => { item.style.backgroundColor = '#8b9aff'; })
 
-    bgBlack.forEach(function (item) { item.style.backgroundColor = 'black'; })
+    bgBlack.forEach((item) => { item.style.backgroundColor = 'black'; })
 
     // Mudanças adicionais de estilo
     sup.style.color = "#616161";
@@ -57,14 +63,15 @@ function dark() {
     bgYborder.style.backgroundColor = '#8b9aff'
     claro.textContent = "Light";
   }
+
   else {
 
     // Percorre os arrays e aplica estilos.
 
-    colorWhiteAll.forEach(function (item) { item.forEach(function (elemento) { elemento.style.color = 'black' }) })
-    bgBlack.forEach(function (item) { item.style.backgroundColor = 'white'; })
+    colorWhiteAll.forEach((item) => { item.forEach((elemento) => { elemento.style.color = 'black' }) })
+    bgBlack.forEach((item) => { item.style.backgroundColor = 'white'; })
 
-    bgYArray.forEach(function (item) { item.style.backgroundColor = 'yellow'; item.style.color = 'black'; })
+    bgYArray.forEach((item) => { item.style.backgroundColor = 'yellow'; item.style.color = 'black'; })
 
     // Mudanças adicionais de estilo.
 
@@ -98,3 +105,16 @@ setInterval(() => {
   let get = new Date().getFullYear()
   data.innerText = get;
 }, 1000)
+
+
+//Sistema de transição entre os nomes do titulo
+
+setInterval(() => {
+  contador += 1;
+  if (contador == 4) {
+    contador = 0;
+  }
+
+  // Atualiza o título com base no contador
+  amor.innerText = nomes[Number(contador)];
+}, 5000);
