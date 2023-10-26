@@ -592,6 +592,8 @@ section,
 
 @media (max-width: 440px) {
 
+  main {height: 600px;}
+
   #titulo {
     margin-top: 24px;
   }
@@ -686,8 +688,6 @@ section,
 
 
 @media (max-width: 380px) {
-
-  main {height: 600px;}
 
   #suptitulo {
     margin-right: 22px;
