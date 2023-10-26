@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+* {
+  animation: entrada 2s ease-out;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -215,6 +219,7 @@ body {
 
 .bgYellow {
   background-color: yellow;
+  transition: ease 1s;
 }
 
 #borda {
@@ -228,10 +233,6 @@ body {
   text-align: left;
   padding-left: 12px;
   font-family: neue2;
-}
-
-* {
-  animation: entrada 2s ease-out;
 }
 
 section,
@@ -685,6 +686,9 @@ section,
 
 
 @media (max-width: 380px) {
+
+  main {height: 600px;}
+
   #suptitulo {
     margin-right: 22px;
   }
