@@ -222,7 +222,22 @@ body {
   border-left: 4px solid;
   text-align: left;
   padding-left: 12px;
-  font-family: cattigan;
+}
+
+* {
+  animation: entrada 2s ease-out;
+}
+
+section,
+#sobre,
+#projetos,
+#alerta,
+#loading,
+#paragrafo-cont,
+#link-cont {
+  animation: entrada2 1s ease;
+  animation-timeline: view();
+  animation-range-end: cover 40%;
 }
 
 #infoOcult {
@@ -328,6 +343,8 @@ body {
   margin-left: 10px;
 }
 
+/*  Transição do nome no tema */
+
 @keyframes fadeInOut {
   0% {
     opacity: 0;
@@ -343,6 +360,31 @@ body {
 
   100% {
     opacity: 0;
+  }
+}
+
+/* Animação de entrada */
+@keyframes entrada {
+  from {
+    opacity: 0;
+    translate: -10vw 0;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes entrada2 {
+  from {
+    opacity: 0;
+    translate: -10vw 0;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
   }
 }
 
