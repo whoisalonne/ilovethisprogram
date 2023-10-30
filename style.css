@@ -9,6 +9,7 @@ body {
 
 * {
   animation: entrada 2s ease-out;
+  font-family: montreal, sans-serif;
 }
 
 header {
@@ -142,7 +143,6 @@ body {
 #projetos,
 #alerta,
 #rodape {
-  font-family: montreal, sans-serif;
   text-align: center;
 }
 
@@ -242,7 +242,7 @@ section,
 #loading,
 #paragrafo-cont,
 #link-cont {
-  animation: entrada2 1s ease;
+  animation: entrada 1s ease;
   animation-timeline: view();
   animation-range-end: cover 40%;
 }
@@ -372,18 +372,6 @@ section,
 
 /* Animação de entrada */
 @keyframes entrada {
-  from {
-    opacity: 0;
-    translate: -10vw 0;
-  }
-
-  to {
-    opacity: 1;
-    translate: 0 0;
-  }
-}
-
-@keyframes entrada2 {
   from {
     opacity: 0;
     translate: -10vw 0;
