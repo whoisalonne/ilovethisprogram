@@ -101,9 +101,9 @@ function topo() {
 //Função necessária para atualização do ano no copyright (footer)
 
 setInterval(() => {
-  let data = document.getElementById('data');
-  let get = new Date().getFullYear()
-  data.innerText = get;
+  let dataCopyright = document.getElementById('data');
+  let dataAtual = new Date().getFullYear()
+  dataCopyright.innerText = dataAtual;
 }, 1000)
 
 
