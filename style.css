@@ -122,7 +122,6 @@ body {
 
 #amor {
   color: #E21F14;
-  transition: ease 1s;
   animation: fadeInOut 5s infinite;
 }
 
@@ -363,7 +362,7 @@ section,
 
   80% {
     opacity: 1;
-  }
+/  }
 
   100% {
     opacity: 0;
@@ -668,6 +667,14 @@ section,
     font-size: 14px;
   }
 
+  #paragrafo-cont {
+    margin-top: 140px;
+  }
+
+  #contato-links {
+    margin-bottom: 140px
+  }
+
   #link-cont {
     font-size: 35px;
   }
@@ -750,7 +757,6 @@ section,
   #bgYellowPlus,
   #habilits {
     font-size: 22px;
-  }
 
   #listaOculta li,
   #paragrafo {
@@ -767,6 +773,7 @@ section,
     margin-left: 15px;
     margin-right: 15px;
   }
+
 
   #link-cont {
     font-size: 25px;
