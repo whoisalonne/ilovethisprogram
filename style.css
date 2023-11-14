@@ -685,7 +685,7 @@ section,
 @media (max-width: 340px) {
 
   main {
-    height: 545px;
+    height: 645px;
   }
 
   #titulo {
@@ -746,6 +746,7 @@ section,
   #bgYellowPlus,
   #habilits {
     font-size: 22px;
+  }
 
   #listaOculta li,
   #paragrafo {
@@ -759,6 +760,7 @@ section,
   #paragrafo-cont,
   #txt-cont {
     font-size: 14px;
+    text-align: center;
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -772,5 +774,4 @@ section,
     width: 45px;
     margin-left: 10px;
   }
-
 }
