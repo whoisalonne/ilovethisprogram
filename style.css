@@ -102,10 +102,8 @@ body {
 }
 
 #suptitulo {
-  margin-left: 30px;
   font-size: 16px;
-  margin-bottom: -70px;
-  margin-top: 90px;
+  margin: 90px 0 -70px 30px;
   color: #b2b2b2;
 }
 
@@ -141,14 +139,13 @@ body {
 #sobre,
 #projetos,
 #alerta,
-#rodape {
+#rodape, #txt-cont {
   text-align: center;
 }
 
 #subtitulo {
-  margin-top: -50px;
+  margin: -50px 0 0 30px;
   font-size: 16px;
-  margin-left: 30px;
   color: #616161;
 }
 
@@ -174,8 +171,7 @@ body {
 }
 
 #info {
-  margin-left: 40px;
-  margin-right: 60px;
+  margin: 0 60px 0 40px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -187,8 +183,7 @@ body {
   border: 1px solid;
   width: 30%;
   height: 50%;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin: 20px 0 50px 0;
   box-shadow: -12px 12px black;
 }
 
@@ -206,8 +201,7 @@ body {
 
 #txt {
   width: 60%;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  margin: 20px 0 60px 0;
 }
 
 #txt-nome,
@@ -308,13 +302,8 @@ section,
   font-family: montreal;
 }
 
-#txt-cont {
-  margin: 0, 10px;
-  text-align: center;
-}
-
 #paragrafo-cont {
-  margin-top: 15%;
+  margin-top: 10%;
   font-size: 17px;
 }
 
