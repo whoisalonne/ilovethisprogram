@@ -187,7 +187,7 @@ body {
   box-shadow: -12px 12px black;
 }
 
-#eu-video {
+#eu-foto {
   display: block;
   width: 100%;
   height: 60%;
@@ -195,7 +195,7 @@ body {
   transition: ease 1s;
 }
 
-#eu-video:hover {
+#eu-foto:hover {
   filter: grayscale(0%);
 }
 
