@@ -326,17 +326,17 @@ section,
 }
 
 #w1-desc {
-margin-top: 5%;
+  margin-top: 5%;
 }
 
 #w1-buttons {
-margin: 5% 0 8% 0;
-display: flex;
-justify-content: center;
+  margin: 5% 0 8% 0;
+  display: flex;
+  justify-content: center;
 }
 
 .w1-bt {
- padding: 20px;
+  padding: 20px;
 }
 
 #contrate {
@@ -508,6 +508,10 @@ justify-content: center;
     list-style-type: none;
   }
 
+  #w1-principal {
+    height: 300px;
+  }
+
   #github {
     margin-left: 10px;
   }
@@ -543,6 +547,21 @@ justify-content: center;
 
   #github {
     width: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  #w1-titulo {
+    font-size: 90px;
+  }
+
+  #w1-desc-titulo {
+    font-size: 21px;
+  }
+
+  .w1-bt {
+    padding: 10px;
   }
 }
 
