@@ -43,7 +43,7 @@ claro.addEventListener('click', dark);
 function dark() {
   if (main.style.backgroundColor == "white") {
 
-    // Percorre os arrays e aplica estilos - Esuro
+    // Percorre os arrays e aplica estilos - Escuro
     colorWhiteAll.forEach((item) => { item.forEach((elemento) => { elemento.style.color = 'white' }) })
 
     bgYArray.forEach((item) => { item.style.backgroundColor = '#8b9aff'; })

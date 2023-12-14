@@ -34,6 +34,11 @@ header {
   src: url('fontes/NeueMontreal-Regular.otf');
 }
 
+@font-face {
+  font-family: franchise;
+  src: url('fontes/Franchise-Free-Bold.otf');
+}
+
 #div-titulo {
   margin-left: 20px;
   margin-top: -10px;
@@ -139,7 +144,8 @@ body {
 #sobre,
 #projetos,
 #alerta,
-#rodape, #txt-cont {
+#rodape,
+#txt-cont {
   text-align: center;
 }
 
@@ -284,14 +290,53 @@ section,
   margin: 10% 0;
 }
 
-#alerta {
-  font-size: 45px;
-  margin: 10% 10%;
-  text-align: center;
+#work1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
 }
 
-#loading {
-  color: #b2b2b2;
+#w1-principal {
+  background: whitesmoke;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+
+#w1-caixa {
+  padding: 10px;
+  background: #6746E9;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#w1-titulo {
+  font-size: 120px;
+  font-family: franchise;
+}
+
+#w1-desc {
+margin-top: 5%;
+}
+
+#w1-buttons {
+margin: 5% 0 8% 0;
+display: flex;
+justify-content: center;
+}
+
+.w1-bt {
+ padding: 20px;
 }
 
 #contrate {
@@ -351,7 +396,8 @@ section,
 
   80% {
     opacity: 1;
-/  }
+    /
+  }
 
   100% {
     opacity: 0;
