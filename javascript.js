@@ -47,7 +47,7 @@ function dark() {
 
     bgYArray.forEach((item) => { item.style.backgroundColor = '#8b9aff'; })
 
-    bgBlack.forEach((item) => { item.style.backgroundColor = 'black'; })
+    bgBlack.forEach((item) => { item.style.backgroundColor = '#161616'; })
 
     // Mudanças adicionais de estilo
     sup.style.color = "#616161";
@@ -61,7 +61,6 @@ function dark() {
     bgYborder.style.backgroundColor = '#8b9aff'
     claro.textContent = "Light";
     workers.style.borderColor = 'white';
-
   }
 
   else {
@@ -106,12 +105,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   workers.addEventListener('mouseleave', () => {
     internoP.forEach((item) => {
-      if (main.style.backgroundColor == "black") {
-        item.style.color = 'white';
+      if (main.style.backgroundColor == "white") {
+        item.style.color = 'black';
         workers.style.backgroundImage = 'url("")'
       }
       else {
-        item.style.color = 'black';
+        item.style.color = 'white';
         workers.style.backgroundImage = 'url("")'
       }
     });
