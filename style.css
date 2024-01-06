@@ -35,6 +35,11 @@ header {
 }
 
 @font-face {
+  font-family: outward;
+  src: url('fontes/outward-block.ttf');
+}
+
+@font-face {
   font-family: franchise;
   src: url('fontes/Franchise-Free-Bold.otf');
 }
@@ -238,7 +243,6 @@ section,
 #sobre,
 #projetos,
 #alerta,
-#loading,
 #paragrafo-cont,
 #link-cont {
   animation: entrada 1s ease;
@@ -291,52 +295,31 @@ section,
 }
 
 #work1 {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 40%;
   border: 1px solid;
-}
-
-#w1-principal {
-  background: whitesmoke;
-  width: 100%;
-  height: 400px;
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid;
+  position: relative;
 }
 
-#w1-caixa {
-  padding: 10px;
-  background: #6746E9;
-  border: 2px solid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+#work1 a {
+  font-family: outward;
 }
 
-#w1-titulo {
-  font-size: 120px;
-  font-family: franchise;
+.tituloW {
+  font-size: 300px;
+  position: absolute;
 }
 
-#w1-desc {
-  margin-top: 5%;
-}
-
-#w1-buttons {
-  margin: 5% 0 8% 0;
-  display: flex;
-  justify-content: center;
-}
-
-.w1-bt {
-  padding: 20px;
+.paragW {
+  position: absolute;
+  margin-top: 60%;
 }
 
 #contrate {
@@ -396,7 +379,6 @@ section,
 
   80% {
     opacity: 1;
-    /
   }
 
   100% {

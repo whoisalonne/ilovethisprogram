@@ -13,9 +13,8 @@ let bgYborder = document.getElementById('bgYellowPlus');
 let bgYellow = document.querySelectorAll('.bgYellow');
 let imgContent = document.getElementById('img');
 let border = document.getElementById('borderW');
-let loading = document.getElementById('loading');
 let pH = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, ul'); //Adiciona as tags de 'p', 'ul' e 'h(geral)'
-
+let workers = document.querySelector('#work1');
 //Variavéis globais representando as imagens da página
 
 let github = document.getElementById('github');
@@ -57,11 +56,12 @@ function dark() {
     sub.style.color = "#616161";
     imgContent.style.borderColor = 'white';
     border.style.borderColor = 'white';
-    loading.style.color = "#b2b2b2";
     github.setAttribute('src', 'img/github-logopreto.png')
-    linkedin.setAttribute('src', 'img/linkedin-logopreto.png')
+    linkedin.setAttribute('src', 'img/linkedin-BgBlack.png')
     bgYborder.style.backgroundColor = '#8b9aff'
     claro.textContent = "Light";
+    workers.style.borderColor = 'white';
+
   }
 
   else {
@@ -82,21 +82,51 @@ function dark() {
     bgYborder.style.color = 'black';
     border.style.borderColor = 'black';
     imgContent.style.borderColor = 'black';
-    loading.style.color = "#616161";
     bgYborder.style.backgroundColor = 'yellow'
     github.setAttribute('src', 'img/github-logobranco.png')
-    linkedin.setAttribute('src', 'img/linkedin-logobranco.png')
+    linkedin.setAttribute('src', 'img/linkedin-BgBranco.png')
     claro.textContent = "Dark";
+    workers.style.borderColor = 'black';
   }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  let internoP = workers.querySelectorAll('p, h1');
+
+  workers.addEventListener('mouseenter', () => {
+    internoP.forEach((item) => {
+      if (main.style.backgroundColor == "white") {
+        item.style.color = 'white';
+        workers.style.backgroundImage = 'url("img/spaceOne.jpeg")'
+      }
+      else {
+        workers.style.backgroundImage = 'url("img/spaceOne.jpeg")'
+      }
+    });
+  });
+  workers.addEventListener('mouseleave', () => {
+    internoP.forEach((item) => {
+      if (main.style.backgroundColor == "black") {
+        item.style.color = 'white';
+        workers.style.backgroundImage = 'url("")'
+      }
+      else {
+        item.style.color = 'black';
+        workers.style.backgroundImage = 'url("")'
+      }
+    });
+  });
+});
+
+
+
+
 //Função necessária para scrollar ao topo qunado clicado no titulo (ILTP)
 
-titulo.addEventListener('click', topo);
-
-function topo() {
+titulo.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
-}
+});
+
 
 //Função necessária para atualização do ano no copyright (footer)
 
